@@ -23,7 +23,7 @@ window.addEventListener("scroll", () => {
     })
 
     if(window.pageYOffset + window.innerHeight >= progress.offsetTop) {
-        document.querySelectorAll('.progress-percent').forEach(el, i) => {
+        document.querySelectorAll(".progress-percent").forEach(el, i) => {
             el.style.width = `${progressBarPercents[i]}%`;
         });
     }
